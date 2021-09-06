@@ -1,11 +1,11 @@
 <?php
 class DB {
     private $user = "alex";
-    private $pass = "12345";
+    private $pass = "asd";
     private $dbh;
 
     public function __construct() {
-        $this ->dbh = new PDO("mysql:host=localhost;dbname=\"learnwords\"", $this->user, $this->pass);
+        $this ->dbh = new PDO("mysql:host=localhost;dbname=words", $this->user, $this->pass);
     }
 
     public function getAllData($table) {

@@ -7,6 +7,6 @@
     <script src="/js/jquery-1.6.2.js" type="text/javascript"></script>
 </head>
 <body>
-<?php include 'app/views/'.$content_view; ?>
+<?php include 'app/views/'.$this->content_view; ?>
 </body>
 </html>
