@@ -11,4 +11,9 @@ class DB {
     public function getAllData($table) {
         return $this->dbh->query("SELECT * FROM $table");
     }
+
+    public function addWord($word, $translation, $category_id)
+    {
+        $this->dbh->query("INSERT INTO words ('word', 'translation', 'category_id') VALUES ($word, $translation, $category_id)");
+    }
 }
